@@ -234,7 +234,8 @@ body .header {
     border-left-color: transparent;
     padding-right: calc(var(--item-padding) + 4px);
     
-    &.feed-has-unread {
+    &.feed-has-unread,
+    &.category-has-unread {
       border-right: none;
       border-top: none;
       border-bottom: none;
