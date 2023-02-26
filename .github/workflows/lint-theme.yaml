@@ -1,0 +1,46 @@
+name: Lint theme
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-style:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: ↩️ Checkout
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: 🏗️ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 🏗️ Install packages
+        run: npm ci
+
+      - name: 🔎 Check Style
+        run: npm run lint
+
+  ensure-css-file-build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: ↩️ Checkout
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: 🏗️ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 🏗️ Install packages
+        run: npm ci
+
+      - name: ⚙️ Build Style
+        run: npm run build

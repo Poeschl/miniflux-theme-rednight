@@ -1,33 +1,10 @@
 {
   "defaultSeverity": "warning",
-  "plugins": [
-    "stylelint-value-no-unknown-custom-properties",
-    "stylelint-declaration-use-variable",
-    "stylelint-scss",
-    "stylelint-a11y",
-		"stylelint-order"
-  ],
   "extends": [
     "stylelint-config-standard",
     "stylelint-config-recommended-scss"
   ],
   "rules": {
-    "csstools/value-no-unknown-custom-properties": [true, {
-      "importFrom": [
-        "style.css"
-      ]
-    }],
-    "sh-waqar/declaration-use-variable": [
-      [
-        "/color/",
-        {
-          "ignoreValues": [
-            "transparent",
-            "inherit"
-          ]
-        }
-      ]
-    ],
     "custom-property-empty-line-before": "never",
     "block-closing-brace-empty-line-before": "never",
     "property-case": "lower",
@@ -116,14 +93,6 @@
       "/^animation/": ["ms", "s"],
       "line-height": ["px", "%", ""]
     }],
-    "a11y/no-outline-none": true,
-		"a11y/selector-pseudo-class-focus": true,
-		"a11y/font-size-is-readable": null,
-		"a11y/line-height-is-vertical-rhythmed": [null, { "severity": "warning" }],
-		"a11y/no-display-none": null,
-		"a11y/no-obsolete-element": [true, { "severity": "warning" }],
-		"a11y/no-text-align-justify": [true, { "severity": "warning" }],
-    "order/properties-alphabetical-order": true,
     "property-disallowed-list": ["font", "animation", "background"]
   }
 }

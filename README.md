@@ -1,21 +1,23 @@
-# Dark midnight theme for Miniflux
+# Dark redisch midnight theme for Miniflux
 
 A dark Miniflux theme that aims to be the most readable and modern minimal Miniflux theme out there.
+Adjusted with a red touch and some personal adjustments.
 
-### Features
+## Screenshots
 
-- Colored categories (first 8 at the moment)
-- Proper white space
-
-![Screenshot](https://i.imgur.com/QLig0CY.png "Screenshot")
+//TDB: Screenshots
 
 ## How to use
 
-1. Open style.css, select all, copy
-2. Go to **Settings > Custom CSS** and paste the contents there
+1. Open [`https://poeschl.github.io/miniflux-theme-rednight/rednight-style.css`](https://poeschl.github.io/miniflux-theme-rednight/rednight-style.css)
+2. Copy the whole file content
+3. Go to **Settings > Custom CSS** and paste the contents there
 
 ## Development
 
 1. Run `npm install`
-2. Run `scss --style compressed style.scss > style.css`
-   or watch for changes: `scss --style compressed --watch style.scss:style.css`
+2. Run `npm run build` to create the result `rednight-style.css` or watch for changes with `npm run dev`
+
+## Thanks
+
+Thanks to [@ronilaukkarinen](https://github.com/ronilaukkarinen) for the original theme.
