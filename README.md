@@ -5,7 +5,12 @@ Adjusted with a red touch and some personal adjustments.
 
 ## Screenshots
 
-//TDB: Screenshots
+![Unread](docs/unread.png)
+
+![All Feeds](docs/feeds.png)
+
+![Unread Mobile](docs/unread-mobile.png)
+![Categories Mobile](docs/categories-mobile.png)
 
 ## How to use
 
