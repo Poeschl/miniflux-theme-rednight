@@ -190,18 +190,18 @@ body .header {
   // "No unread articles
   + p.alert,
   + p.alert.alert-info {
-    background-image: url('https://poeschl.github.io/miniflux-theme-rednight/done.svg');
+    background-image: url('https://poeschl.github.io/miniflux-theme-rednight/checkmark.svg');
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: 400px auto;
+    background-size: 240px auto;
     border-radius: 4px;
-    height: 400px;
+    height: 240px;
     overflow: auto;
     text-align: center;
 
     @media (max-width: 600px) {
-      background-size: 230px auto;
-      height: 250px;
+      background-size: 180px auto;
+      height: 180px;
     }
   }
 
