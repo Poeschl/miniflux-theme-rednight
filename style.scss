@@ -387,6 +387,15 @@ body .item {
 
 .entry-content {
   line-height: var(--entry-content-line-height);
+
+  & > img,
+  & > figure,
+  & > video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
 }
 
 body .entry-header h1 {
