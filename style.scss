@@ -88,6 +88,8 @@
   --current-item-border-color: transparent;
   --current-item-box-shadow: 0 0 8px color.adjust(#ab2424, $alpha: .8);
   --entry-header-title-link-color: var(--color-white);
+  --entry-content-font-family: var(--font-family);
+  --entry-content-font-weight: 350;
   --entry-content-color: var(--color-white);
   --entry-content-code-color: var(--color-white);
   --entry-content-code-background: #000;
